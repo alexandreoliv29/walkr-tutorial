@@ -86,7 +86,7 @@ export const Videos = () => {
                         </div>
                     </div>
                     <div className="col-md-9">
-                        <div className="video d-flex">
+                        <div className="video d-column">
                             <ReactPlayer url={video.url} controls={true} />
                         </div>
                     </div>

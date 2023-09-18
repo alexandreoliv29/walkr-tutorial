@@ -23,13 +23,23 @@ export const Download = () => {
                             style={{ maxWidth: '100%', width: '100%' }}
                         />
                     </a>
-                    <a href="">
-                        <img
-                            src="https://walkr.app/wp-content/uploads/2022/09/qrcode.svg"
-                            alt=""
-                            style={{ maxWidth: '100%', width: '100%' }}
-                        />
-                    </a>
+                    {window.screen.width < 767 ?
+                        <a href="" className="mt-5 mb-5">
+                            <img
+                                src="https://walkr.app/wp-content/uploads/2022/09/qrcode.svg"
+                                alt=""
+                                style={{ maxWidth: '100%', width: '60%' }}
+                            />
+                        </a>
+                        :
+                        <a href="" className="">
+                            <img
+                                src="https://walkr.app/wp-content/uploads/2022/09/qrcode.svg"
+                                alt=""
+                                style={{ maxWidth: '100%', width: '100%' }}
+                            />
+                        </a>
+                    }
                 </div>
 
             </div>
