@@ -82,12 +82,12 @@ export const Videos = () => {
                         <div className="title mt-5">
                             <h4 className="text-white" style={{ textAlign: 'left' }} >{video.title}</h4>
                             <h5 className="mt-3" style={{ color: "#29BCBA", fontWeight: 'bold', fontSize: 24, textAlign: 'left' }}>{video.subtitle}</h5>
-                            <p className="text-white mt-3" style={{ fontSize: 14, textAlign: 'left' }}>{video.description}</p>
                         </div>
                     </div>
                     <div className="col-md-9">
                         <div className="video d-column">
-                            <ReactPlayer url={video.url} controls={true} />
+                            <ReactPlayer url={video.url} controls={true}   />
+                            <p className="text-white mt-3" style={{ fontSize: 18, textAlign: 'left' }}>{video.description}</p>
                         </div>
                     </div>
                 </div>
